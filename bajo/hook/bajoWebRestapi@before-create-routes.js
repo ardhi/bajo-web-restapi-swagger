@@ -1,7 +1,8 @@
 import swagger from '@fastify/swagger'
 import swaggerUi from '@fastify/swagger-ui'
 
-async function boot (ctx) {
+async function bajoWebRestapiBeforeCreateRoutes (ctx) {
+  this.log.debug('Rest API documentation is running')
   await this.docSchemaGeneral(ctx)
   const { cloneDeep } = this.app.bajo.lib._
   const opts = cloneDeep(this.config.swagger)
@@ -14,4 +15,4 @@ async function boot (ctx) {
   await ctx.register(swaggerUi, optsUi)
 }
 
-export default boot
+export default bajoWebRestapiBeforeCreateRoutes
