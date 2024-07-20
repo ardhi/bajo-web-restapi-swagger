@@ -1,0 +1,34 @@
+{
+  "name": "bajo-web-restapi-swagger",
+  "version": "1.0.0",
+  "description": "Swagger Docs support to REST API Web Server Plugin for Bajo Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardhi/bajo-web-restapi-swagger.git"
+  },
+  "keywords": [
+    "swagger",
+    "restapi",
+    "web",
+    "webserver",
+    "bajo",
+    "framework",
+    "fastify",
+    "modular"
+  ],
+  "author": "Ardhi Lukianto <ardhi@lukianto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardhi/bajo-web-restapi-swagger/issues"
+  },
+  "homepage": "https://github.com/ardhi/bajo-web-restapi-swagger#readme",
+  "dependencies": {
+    "@fastify/swagger": "^8.8.0",
+    "@fastify/swagger-ui": "^1.9.3"
+  }
+}
